@@ -98,13 +98,13 @@
     }
   },
   "scripts": {
-    "build": "parcel build --no-optimize",
+    "build": "node init && parcel build --no-optimize",
     "check": "npm run check:eslint && npm run check:stylelint",
     "check:eslint": "eslint --ext .js,.jsx,.tsx,.ts ./src --quiet",
     "check:stylelint": "stylelint \"**/*.{css,scss}\"",
     "check-types": "tsc -b",
     "fix": "eslint --ext .js,.jsx,.tsx,.ts ./src --quiet --fix && stylelint \"**/*.{css,scss}\" --fix",
-    "run": "parcel watch",
+    "run": "node init && parcel watch",
     "test": "jest",
     "test-ci": "jest --ci --forceExit --detectOpenHandles --maxWorkers=100% --logHeapUsage",
     "clean": "rm -rf dist node_modules *.tsbuildinfo .parcel-cache"

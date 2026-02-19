@@ -6,10 +6,10 @@
   "types": "dist/index.d.ts",
   "styles": "dist/index.esm.css",
   "scripts": {
-    "build": "rollup -c",
+    "build": "node init && rollup -c",
     "check": "eslint --ext .js,.jsx,.tsx,.ts ./src --quiet",
     "check-types": "tsc -b",
-    "run": "rollup -c --watch",
+    "run": "node init && rollup -c --watch",
     "test": "cross-env TZ=Etc/UTC jest",
     "test:updatesnapshot": "cross-env TZ=Etc/UTC jest --updateSnapshot",
     "test-ci": "cross-env TZ=Etc/UTC jest --ci --forceExit --detectOpenHandles --maxWorkers=100% --logHeapUsage",

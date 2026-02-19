@@ -110,7 +110,6 @@ Session.vim
 *~
 
 # VSCode project files
-.vscode
 *.code-workspace
 
 # Gogland project files
@@ -158,9 +157,9 @@ docker-compose.override.yaml
 .notice/
 .notice-work/
 .aider*
-.env
 
 **/CLAUDE.local.md
 **/CLAUDE.md
 .cursorrules
 .cursor/
+config.bat

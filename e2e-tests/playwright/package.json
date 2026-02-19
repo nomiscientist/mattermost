@@ -5,8 +5,8 @@
   ],
   "scripts": {
     "postinstall": "script/post_install.sh && npm run build",
-    "build": "npm run build --workspaces",
-    "build:watch": "npm run build:watch --workspaces",
+    "build": "node init && npm run build --workspaces",
+    "build:watch": "node init && npm run build:watch --workspaces",
     "tsc": "tsc -b && npm run tsc --workspaces",
     "lint": "eslint .",
     "lint:test-docs": "node script/lint-test-docs.js",

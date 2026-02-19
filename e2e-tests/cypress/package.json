@@ -97,7 +97,7 @@
     "cypress:run:edge": "cross-env TZ=Etc/UTC cypress run --browser edge",
     "cypress:run:electron": "cross-env TZ=Etc/UTC cypress run --browser electron",
     "benchmarks:run-server": "cd mattermost && bin/mattermost",
-    "start:webhook": "node webhook_serve.js",
+    "start:webhook": "node init && node webhook_serve.js",
     "pretest": "npm run clean",
     "test": "cross-env TZ=Etc/UTC cypress run",
     "test:smoke": "node run_tests.js --stage='@prod' --group='@smoke'",

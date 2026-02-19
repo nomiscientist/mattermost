@@ -31,10 +31,10 @@
     "test-automation"
   ],
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs",
-    "build:watch": "npm run build -- --watch",
-    "build-tsc": "tsc --build --verbose",
-    "build-tsc:watch": "tsc --watch --preserveWatchOutput",
+    "build": "node init && rollup -c --bundleConfigAsCjs",
+    "build:watch": "node init && npm run build -- --watch",
+    "build-tsc": "node init && tsc --build --verbose",
+    "build-tsc:watch": "node init && tsc --watch --preserveWatchOutput",
     "clean": "rm -rf dist node_modules *.tsbuildinfo",
     "tsc": "tsc -b"
   },

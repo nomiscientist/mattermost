@@ -60,7 +60,7 @@
     }
   },
   "scripts": {
-    "build": "tsc --build --verbose",
+    "build": "node init && tsc --build --verbose",
     "postbuild": "sh postbuild.sh",
     "clean": "rm -rf lib node_modules *.tsbuildinfo"
   }
